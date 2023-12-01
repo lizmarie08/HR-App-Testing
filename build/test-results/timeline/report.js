@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"eceb4229-3954-4a6d-98e8-1f992c66c95a","feature":"Funcionalidad de reclutamiento en una aplicacion de recursos humanos","scenario":"Agregar nueva vacante","start":1701397496012,"group":73,"content":"","tags":"@escenario04,","end":1701397533796,"className":"passed"},{"id":"1df2515f-c923-41c3-b1eb-661bc23fca37","feature":"Funcionalidad de reclutamiento en una aplicacion de recursos humanos","scenario":"Agregar nuevo candidato","start":1701397496000,"group":72,"content":"","tags":"@escenario05,","end":1701397528499,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":72,"content":"Thread[ForkJoinPool-3-worker-1,5,main]"},{"id":73,"content":"Thread[ForkJoinPool-3-worker-2,5,main]"}]);
+});

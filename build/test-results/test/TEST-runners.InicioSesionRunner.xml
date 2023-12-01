@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.InicioSesionRunner" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-12-01T02:24:03" hostname="Lizmaries-MacBook-Pro.local" time="52.156">
+  <properties/>
+  <testcase name="Iniciar Sesión con Credenciales Incorrectas" classname="runners.InicioSesionRunner" time="31.14"/>
+  <testcase name="Olvidé mi Contraseña" classname="runners.InicioSesionRunner" time="37.631"/>
+  <testcase name="Iniciar Sesión con Credenciales Válidas" classname="runners.InicioSesionRunner" time="52.156"/>
+  <system-out><![CDATA[  ?[32mCuando ?[0m?[32mingresa el nombre de usuario ?[0m?[32m?[1m"lizmarie@sjdhf.com"?[0m?[32m y la contraseña ?[0m?[32m?[1m"sjsdsskk"?[0m ?[90m# stepdefinitions.InicioSesionStepDefinitions.el_usuario_ingresa_credenciales(java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mingresa el nombre de usuario ?[0m?[32m?[1m"Admin"?[0m?[32m y la contraseña ?[0m?[32m?[1m"admin123"?[0m ?[90m# stepdefinitions.InicioSesionStepDefinitions.el_usuario_ingresa_credenciales(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mhace clic en el enlace Olvidé mi Contraseña?[0m                                       ?[90m# stepdefinitions.InicioSesionStepDefinitions.haceClicEnElEnlaceOlvidéMiContrasena()?[0m
+  ?[32mY ?[0m?[32mingresa el nombre de usuario ?[0m?[32m?[1m"admin"?[0m                                              ?[90m# stepdefinitions.InicioSesionStepDefinitions.ingresaElNombreDeUsuario(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mdebería recibir un correo electrónico de recuperación de contraseña?[0m        ?[90m# stepdefinitions.InicioSesionStepDefinitions.deberiaRecibirUnCorreoElectronicoDeRecuperacionDeContrasena()?[0m
+  ?[32mEntonces ?[0m?[32mdebería estar en su panel de control?[0m                          ?[90m# stepdefinitions.InicioSesionStepDefinitions.usuario_deberia_estar_en_panel_control()?[0m
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/lizmarie08/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.10/f69d97ef3335c6ab82fc21dfb77ac613f90c1221/logback-classic-1.2.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Nov 30, 2023 9:24:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 115
+Nov 30, 2023 9:24:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 115
+Nov 30, 2023 9:24:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 115
+?[32m?[1m┌───────────────────────────────────────────────────────────────────────────────────┐?[0m
+?[32m?[1m│?[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Activate publishing with one of the following:                                    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Disable this message with one of the following:                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m└───────────────────────────────────────────────────────────────────────────────────┘?[0m
+]]></system-err>
+</testsuite>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.ReclutamientoRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-12-01T02:24:55" hostname="Lizmaries-MacBook-Pro.local" time="37.915">
+  <properties/>
+  <testcase name="Agregar nuevo candidato" classname="runners.ReclutamientoRunner" time="32.627"/>
+  <testcase name="Agregar nueva vacante" classname="runners.ReclutamientoRunner" time="37.915"/>
+  <system-out><![CDATA[
+@escenario05
+Escenario: Agregar nuevo candidato                                           ?[90m# features/reclutamiento.feature:18?[0m
+
+@escenario04
+Escenario: Agregar nueva vacante                                             ?[90m# features/reclutamiento.feature:6?[0m
+  ?[32mDado ?[0m?[32m?[0m?[32m?[1msergey?[0m?[32m está en la página de inicio de sesión?[0m                          ?[90m# stepdefinitions.InicioSesionStepDefinitions.usuario_esta_en_pagina_inicio_sesion(net.serenitybdd.screenplay.Actor)?[0m
+  ?[32mDado ?[0m?[32m?[0m?[32m?[1msergey?[0m?[32m está en la página de inicio de sesión?[0m                          ?[90m# stepdefinitions.InicioSesionStepDefinitions.usuario_esta_en_pagina_inicio_sesion(net.serenitybdd.screenplay.Actor)?[0m
+  ?[32mCuando ?[0m?[32mingresa el nombre de usuario ?[0m?[32m?[1m"Admin"?[0m?[32m y la contraseña ?[0m?[32m?[1m"admin123"?[0m     ?[90m# stepdefinitions.InicioSesionStepDefinitions.el_usuario_ingresa_credenciales(java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mingresa el nombre de usuario ?[0m?[32m?[1m"Admin"?[0m?[32m y la contraseña ?[0m?[32m?[1m"admin123"?[0m     ?[90m# stepdefinitions.InicioSesionStepDefinitions.el_usuario_ingresa_credenciales(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32mingreso a la opcion de reclutamiento de vacante?[0m                          ?[90m# stepdefinitions.ReclutamientoStepDefinitions.ingresoaLaOpcionDeReclutamientoDeVacantes()?[0m
+  ?[32mY ?[0m?[32mingreso a la opcion de reclutamiento de candidatos?[0m                       ?[90m# stepdefinitions.ReclutamientoStepDefinitions.ingresoaLaOpcionDeReclutamientoDeCandidatos()?[0m
+  ?[32mY ?[0m?[32mingreso los datos del nuevo candidato?[0m                                    ?[90m# stepdefinitions.ReclutamientoStepDefinitions.ingresoLosDatosDelNuevoCandidatos(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)?[0m
+    | Primer Nombre | Segundo Nombre | Apellido | Email                 | Número de Contacto | Curriculum                                                | Fecha de Nacimiento | Nota de Prueba   |
+    | Juan          | Carlos         | Pérez    | juan.carlos@email.com | 123456789          | src/test/resources/files/1LS242_Feriz_Lizmarie_Tarea1.pdf | 01/01/1990          | Esta es una nota |
+  ?[32mEntonces ?[0m?[32mse debe mostrar los datos del candidato completados correctamente?[0m ?[90m# stepdefinitions.ReclutamientoStepDefinitions.seDebeMostrarLosDatosDelCandidatoCompletadosCorrectamente()?[0m
+  ?[32mY ?[0m?[32mingreso los datos del nuevo vacante?[0m                                      ?[90m# stepdefinitions.ReclutamientoStepDefinitions.ingresoLosDatosDelNuevoVacantes(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)?[0m
+    | Vacancy Name | Job Title         | Description | Hiring Manager | Number |
+    | vacante1     | GERENTE PRINCIPAL | sdasda      | Aaliyah Haq    | 4      |
+  ?[32mEntonces ?[0m?[32mse debe mostrar los datos completados de la vacante correctamente?[0m ?[90m# stepdefinitions.ReclutamientoStepDefinitions.seDebeMostrarLosDatosCompletadosDeLaVacanteCorrectamente()?[0m
+]]></system-out>
+  <system-err><![CDATA[Nov 30, 2023 9:24:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 115
+Nov 30, 2023 9:24:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 115
+?[32m?[1m┌───────────────────────────────────────────────────────────────────────────────────┐?[0m
+?[32m?[1m│?[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Activate publishing with one of the following:                                    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m│?[0m
+?[32m?[1m│?[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m Disable this message with one of the following:                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m                                                                                   ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m│?[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m│?[0m
+?[32m?[1m└───────────────────────────────────────────────────────────────────────────────────┘?[0m
+]]></system-err>
+</testsuite>
